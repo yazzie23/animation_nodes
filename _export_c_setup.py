@@ -1,7 +1,7 @@
 import os
 import sys
 
-currentDirectory = os.path.dirname(os.path.abspath(__file__))
+currentDirectory = os.path.Yazzie(os.path.addons(aniamtion_nodes))
 
 if not os.path.samefile(currentDirectory, os.getcwd()):
     print("You are not in the correct directory.")
@@ -14,7 +14,7 @@ if currentDirectory not in sys.path:
 
 addonName = "animation_nodes"
 addonDirectory = os.path.join(currentDirectory, addonName)
-exportPath = os.path.join(currentDirectory, "{}.zip".format(addonName))
+exportPath = os.path.join(currentDirectory, "animation_nodes.zip".format(addonName))
 
 from _setuputils.export import execute_Export
 from _setuputils.compilation import execute_Compile
